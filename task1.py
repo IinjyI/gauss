@@ -84,11 +84,10 @@ while inService:
     
 #######################################    END PROGRAM    #######################################
     
-    print("\n\npress R if you want to solve another system, otherwise press enter\n")
+    print("\n\npress R if you want to solve another system, otherwise press any key\n")
     if  msvcrt.getwche().lower()=='r':
-        inService=True
         print('\n')
     else:
-        print('exiting...')
+        print('\nexiting...')
         sleep(5)
         sys.exit()
