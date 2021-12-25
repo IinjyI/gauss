@@ -64,7 +64,7 @@ while inService:
                 printMatrix()
     matrixInOperation[nVars-1]=matrix[nVars-1][nVars]/matrix[nVars-1][nVars-1]
     print(matrixInOperation)
-    printMatrix()
+    
 
     for i in range(nVars-2,-1,-1):
         matrixInOperation[i] = matrix[i][nVars]
@@ -89,5 +89,7 @@ while inService:
         print('\n')
     else:
         print('\nexiting...')
-        sleep(5)
+        matrix.clear()
+        matrixInOperation.clear()
+        sleep(3)
         sys.exit()
